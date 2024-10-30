@@ -1,3 +1,28 @@
+## To setup
+1. Clone the repo
+ ```
+ git clone <url>
+ ```
+2.Create Virtual environment
+```
+python -m venv venv
+```
+3.Activate for windows
+```
+venv\Scripts\activate
+```
+4.Install the requirements
+```
+pip install -r requirements.txt
+```
+5.Create .env and paste your apikey
+```
+GOOGLE_API_KEY=<your api key>
+```
+6.Run the app
+```
+streamlit run query.py
+```
 ## DB SCHEMA
 ![inbox_2473556_23a7d4d8cd99e36e32e57303eb804fff_db-schema](https://github.com/user-attachments/assets/9caf4914-671e-4c15-8be9-a0572b77330c)
 
