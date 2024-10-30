@@ -73,6 +73,11 @@ The e-commerce dataset has the following tables with their relationships:
     - `mql_id`, `seller_id`, `first_contact_date`, `landing_page_id`, `origin`, `won_date`, `business_segment`, `lead_type`, etc.
 
 When generating SQL queries:
+ Ensure that:
+- Column names exist in the respective tables.
+- Use table aliases consistently to avoid ambiguity.
+- Validate that JOIN statements are correctly implemented.
+- For ambiguous columns, specify the source table explicitly.
 - Ensure the query matches the specific columns and relationships in this schema.
 - Avoid referencing non-existent columns like "quantity" unless explicitly defined.
 - For common queries:
