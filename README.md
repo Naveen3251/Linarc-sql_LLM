@@ -42,12 +42,3 @@ To evaluate the performance of the SQL query generator for the e-commerce datase
 5. Find the number of closed leads by each business segment.  
 
 These queries should serve as a comprehensive set of test cases to validate the accuracy and effectiveness of the SQL query generator.
-
-"Get the average product dimensions for each category."
-Advanced Analysis:
-
-"Which sellers have the highest total freight cost for their products?"
-"Find the average delivery time for each product category."
-"Get the number of orders by month in 2023."
-"List all orders where the estimated delivery date was earlier than the actual delivery date."
-"Find the number of closed leads by each business segment."
