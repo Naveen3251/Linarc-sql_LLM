@@ -61,7 +61,7 @@ To evaluate the performance of the SQL query generator for the e-commerce datase
 ### Advanced Analysis  
 1. List all orders where the estimated delivery date was earlier than the actual delivery date.  
 2. Find the number of closed leads by each business segment.  
-
+3.Find the average delivery time for each product category.  
 These queries should serve as a comprehensive set of test cases to validate the accuracy and effectiveness of the SQL query generator.
 
 ### Demo
