@@ -17,10 +17,9 @@ To evaluate the performance of the SQL query generator for the e-commerce datase
 
 ### Orders and Customers
 1. List the orders along with their customer details where the order status is 'delivered'.  
-2. Get the list of customers who made purchases in 2023.  
-3. Show the top 5 cities with the most orders.  
-4. Find the count of orders by order status.  
-5. List customers who have ordered more than 5 times.  
+2. Show the top 5 cities with the most orders.  
+3. Find the count of orders by order status.  
+4. List customers who have ordered more than 5 times.  
 
 ### Payments and Reviews
 1. Show the average review score for each product category.  
@@ -34,11 +33,11 @@ To evaluate the performance of the SQL query generator for the e-commerce datase
 3. Show products with more than 3 photos.  
 4. Get the average product dimensions for each category.  
 
-### Advanced Analysis
-1. Which sellers have the highest total freight cost for their products?  
-2. Find the average delivery time for each product category.  
-3. Get the number of orders by month in 2023.  
-4. List all orders where the estimated delivery date was earlier than the actual delivery date.  
-5. Find the number of closed leads by each business segment.  
+### Advanced Analysis  
+1. List all orders where the estimated delivery date was earlier than the actual delivery date.  
+2. Find the number of closed leads by each business segment.  
 
 These queries should serve as a comprehensive set of test cases to validate the accuracy and effectiveness of the SQL query generator.
+
+### Demo
+![Screenshot 2024-10-30 143217](https://github.com/user-attachments/assets/fc6cec5a-d55c-4d72-ab4c-1e850b431d54)
