@@ -1,3 +1,9 @@
+## DB SCHEMA
+![inbox_2473556_23a7d4d8cd99e36e32e57303eb804fff_db-schema](https://github.com/user-attachments/assets/9caf4914-671e-4c15-8be9-a0572b77330c)
+
+## Data source
+https://www.kaggle.com/datasets/terencicp/e-commerce-dataset-by-olist-as-an-sqlite-database
+
 ## SQL Query Generator Testing
 
 To evaluate the performance of the SQL query generator for the e-commerce dataset, you can use the following example natural language questions. These questions cover a range of scenarios, from basic queries to advanced analysis, allowing for comprehensive testing of the generator's capabilities.
