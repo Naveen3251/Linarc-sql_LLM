@@ -106,8 +106,8 @@ if submit and question:
         st.error(query_response)
     else:
         if query_response:  # Check if there are any results
-            for row in query_response:
-                st.write(row)
+            #for row in query_response:
+            st.dataframe(query_response)
         else:
             st.write("No results found.")
 
