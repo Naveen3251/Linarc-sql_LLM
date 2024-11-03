@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { SQL_PROMPT } from './const';
+
 import './App.css'; // Import your CSS file
 
 function App() {
@@ -13,7 +13,6 @@ function App() {
         try {
             const response = await axios.post('http://localhost:5000/generate-query', {
                 question: question,
-                prompt: SQL_PROMPT,
                 db_path: "C:/Linarc-sql_LLM/backend/olist.sqlite"
             });
             
