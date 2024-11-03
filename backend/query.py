@@ -14,7 +14,7 @@ genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 def get_gemini_response(question, prompt):
     model = genai.GenerativeModel('gemini-pro')  # Check if model initialization is correct
     response = model.generate_content([prompt, question])
-    return response.text.strip()  # Remove extra whitespace
+    return response.text.strip ()  # Remove extra whitespace
 
 # Function to retrieve query results from the database
 def read_sql_query(sql, db):
@@ -73,6 +73,11 @@ The e-commerce dataset has the following tables with their relationships:
     - `mql_id`, `seller_id`, `first_contact_date`, `landing_page_id`, `origin`, `won_date`, `business_segment`, `lead_type`, etc.
 
 When generating SQL queries:
+ Ensure that:
+- Column names exist in the respective tables.
+- Use table aliases consistently to avoid ambiguity.
+- Validate that JOIN statements are correctly implemented.
+- For ambiguous columns, specify the source table explicitly.
 - Ensure the query matches the specific columns and relationships in this schema.
 - Avoid referencing non-existent columns like "quantity" unless explicitly defined.
 - For common queries:
@@ -106,10 +111,11 @@ if submit and question:
         st.error(query_response)
     else:
         if query_response:  # Check if there are any results
-            for row in query_response:
-                st.write(row)
+            #for row in query_response:
+            st.dataframe(query_response)
         else:
             st.write("No results found.")
+
 
 
 
