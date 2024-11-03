@@ -1,4 +1,67 @@
+from flask import Flask, request, jsonify
 from dotenv import load_dotenv
+import os
+import sqlite3
+import google.generativeai as genai
+from flask_cors import CORS
+
+app = Flask(__name__)
+CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}})  
+
+load_dotenv()
+
+genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+
+def get_gemini_response(question, prompt):
+    model = genai.GenerativeModel('gemini-pro')
+    response = model.generate_content([prompt, question])
+    return response.text.strip()
+
+def read_sql_query(sql, db):
+    conn = None  
+    try:
+        conn = sqlite3.connect(db)
+        cur = conn.cursor()
+        cur.execute(sql)
+        rows = cur.fetchall()
+        conn.commit()
+        columns = [desc[0] for desc in cur.description] 
+        return {"columns": columns, "rows": rows}
+    except sqlite3.Error as e:
+        return {"error": str(e)}
+    finally:
+        if conn:  
+            conn.close()
+
+
+@app.route('/generate-query', methods=['POST'])
+def generate_query():
+    try:
+        data = request.json
+        question = data.get('question')
+        prompt = data.get('prompt')
+        db_path = data.get('db_path')
+
+        if not question or not prompt or not db_path:
+            return jsonify({"error": "Missing parameters"}), 400
+
+   
+        sql_query = get_gemini_response(question, prompt)
+   
+        results = read_sql_query(sql_query, db_path)
+       
+        return jsonify({"sql_query": sql_query, "results": results})
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
+
+
+
+'''from dotenv import load_dotenv
 import streamlit as st
 import os
 import sqlite3
@@ -114,7 +177,7 @@ if submit and question:
             #for row in query_response:
             st.dataframe(query_response)
         else:
-            st.write("No results found.")
+            st.write("No results found.")'''
 
 
 
