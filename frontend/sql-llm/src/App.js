@@ -12,8 +12,7 @@ function App() {
     const handleQuestionSubmit = async () => {
         try {
             const response = await axios.post('http://localhost:5000/generate-query', {
-                question: question,
-                db_path: "C:/Linarc-sql_LLM/backend/olist.sqlite"
+                question: question
             });
             
             console.log("API Response:", response.data);

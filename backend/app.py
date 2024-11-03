@@ -95,7 +95,7 @@ def generate_query():
     try:
         data = request.json
         question = data.get('question')
-        db_path = data.get('db_path')
+        db_path = "C:/Linarc-sql_LLM/backend/olist.sqlite"
 
         if not question or not prompt or not db_path:
             return jsonify({"error": "Missing parameters"}), 400
