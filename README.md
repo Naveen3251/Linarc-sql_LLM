@@ -3,6 +3,24 @@
  ```
  git clone <url>
  ```
+### Frontend setup
+1.Navigate to frontend folder
+```
+cd frontend/sql-llm
+```
+2.Installation
+```
+npm install
+```
+3.To start
+```
+npm start
+```
+### Backend setup
+1.Navigate to backend folder
+```
+cd backend
+```
 2.Create Virtual environment
 ```
 python -m venv venv
@@ -15,13 +33,13 @@ venv\Scripts\activate
 ```
 pip install -r requirements.txt
 ```
-5.Create .env and paste your apikey
+5.Create .env and paste your gemini apikey
 ```
 GOOGLE_API_KEY=<your api key>
 ```
 6.Run the app
 ```
-streamlit run query.py
+python app.py
 ```
 ## DB SCHEMA
 ![inbox_2473556_23a7d4d8cd99e36e32e57303eb804fff_db-schema](https://github.com/user-attachments/assets/9caf4914-671e-4c15-8be9-a0572b77330c)
@@ -65,4 +83,6 @@ To evaluate the performance of the SQL query generator for the e-commerce datase
 These queries should serve as a comprehensive set of test cases to validate the accuracy and effectiveness of the SQL query generator.
 
 ### Demo
-![Screenshot 2024-10-30 143217](https://github.com/user-attachments/assets/fc6cec5a-d55c-4d72-ab4c-1e850b431d54)
+![Screenshot 2024-11-03 124152](https://github.com/user-attachments/assets/5bfc17d1-2e90-4a30-b866-7437ec17506a)
+![Screenshot 2024-11-03 124323](https://github.com/user-attachments/assets/a8b67255-cb2a-4cf8-ab68-38d871358bce)
+
