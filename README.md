@@ -89,9 +89,8 @@ These queries should serve as a comprehensive set of test cases to validate the 
 Techstacks
 <div align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" width="50" />
-  <img src="https://nodejs.org/static/images/logos/nodejs-new-pantone-black.svg" alt="Node.js" width="50" />
-  <img src="https://www.python.org/community/logos/python-logo-master-v3-TM.png" alt="Python" width="50" />
-  <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Flask_logo.svg" alt="Flask" width="50" />
-  <img src="https://example.com/path/to/gemini-logo.png" alt="Gemini" width="50" /> <!-- Replace with actual logo URL -->
+  <img src="https://nodejs.org/static/logos/nodejsLight.svg" alt="Node.js" width="50" />
+  <img src="https://legacy.python.org/community/logos/python-logo.png" alt="Python" width="50" />
+  <img src="https://www.gstatic.com/lamda/images/gemini_sparkle_v002_d4735304ff6292a690345.svg" alt="Gemini" width="50" /> <!-- Replace with actual logo URL -->
 </div>
 
