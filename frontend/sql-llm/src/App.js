@@ -11,7 +11,7 @@ function App() {
 
     const handleQuestionSubmit = async () => {
         try {
-            const response = await axios.post('http://localhost:5000/generate-query', {
+            const response = await axios.post(`${process.env.REACT_APP_BASE_URL}/generate-query`, {
                 question: question
             });
             
