@@ -36,6 +36,7 @@ pip install -r requirements.txt
 5.Create .env and paste your gemini apikey
 ```
 GOOGLE_API_KEY=<your api key>
+DB_PATH=<>
 ```
 6.Run the app
 ```
@@ -45,6 +46,7 @@ python app.py
 ![inbox_2473556_23a7d4d8cd99e36e32e57303eb804fff_db-schema](https://github.com/user-attachments/assets/9caf4914-671e-4c15-8be9-a0572b77330c)
 
 ## Data source
+Download the data and extract it and take the oslist.sqlite put in project backend directory
 https://www.kaggle.com/datasets/terencicp/e-commerce-dataset-by-olist-as-an-sqlite-database
 
 ## SQL Query Generator Testing
