@@ -86,3 +86,19 @@ These queries should serve as a comprehensive set of test cases to validate the 
 ![Screenshot 2024-11-03 124152](https://github.com/user-attachments/assets/5bfc17d1-2e90-4a30-b866-7437ec17506a)
 ![Screenshot 2024-11-03 124323](https://github.com/user-attachments/assets/a8b67255-cb2a-4cf8-ab68-38d871358bce)
 
+Techstack
+**React**: A JavaScript library for building user interfaces.
+  ![React Logo](https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg)
+  
+- **Node.js**: JavaScript runtime built on Chrome's V8 JavaScript engine.
+  ![Node.js Logo](https://nodejs.org/static/images/logos/nodejs-new-pantone-black.svg)
+
+- **Python**: A high-level programming language known for its readability and versatility.
+  ![Python Logo](https://www.python.org/community/logos/python-logo-master-v3-TM.png)
+
+- **Flask**: A micro web framework for Python.
+  ![Flask Logo](https://flask.palletsprojects.com/en/2.0.x/_images/flask-logo.png)
+
+- **Gemini**: A platform or API for advanced applications (replace with specific description if needed).
+  ![Gemini Logo](https://example.com/path/to/gemini-logo.png) <!-- Replace with actual logo URL -->
+
