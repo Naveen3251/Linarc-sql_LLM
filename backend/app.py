@@ -104,7 +104,7 @@ def generate_query():
         sql_query = get_gemini_response(question, prompt)
    
         results = read_sql_query(sql_query, db_path)
-    
+
         return jsonify({"sql_query": sql_query, "results": results})
 
     except Exception as e:

@@ -10,6 +10,7 @@ function App() {
     const [columns, setColumns] = useState([]);
 
     const handleQuestionSubmit = async () => {
+        //console.log("Base URL:", process.env.REACT_APP_BASE_URL);
         try {
             const response = await axios.post(`${process.env.REACT_APP_BASE_URL}/generate-query`, {
                 question: question
